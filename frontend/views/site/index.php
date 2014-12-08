@@ -6,7 +6,7 @@
  */
 ?>
 
-<div class="form form__subscription">
+<div class="form form_subscription">
 	<h1>Форма подписки на наши новости</h1>
 
 <?php $form=$this->beginWidget('CActiveForm', array(

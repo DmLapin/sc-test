@@ -1,8 +1,14 @@
 <?php
 defined('YII_DEBUG') or define('YII_DEBUG',true);
 require_once(dirname(__FILE__).'/../common/framework/yii.php');
-
-$application = 'frontend';
+if (preg_match('#^/admin/*#', $_SERVER['REQUEST_URI']))
+{
+	$application = 'backend';
+}
+else
+{
+	$application = 'frontend';
+}
 
 $appConfig = CMap::mergeArray(
 	require(dirname(__FILE__).'/../common/config/main.php'),

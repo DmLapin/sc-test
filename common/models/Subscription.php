@@ -36,9 +36,13 @@ class Subscription extends CActiveRecord {
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('email',$this->email,true);
+		$criteria->order = 'id ASC';
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+			'pagination'=>array(
+				'pageSize'=>20,
+			),
 		));
 	}
 
