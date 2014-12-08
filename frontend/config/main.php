@@ -21,6 +21,9 @@ return array(
 		'clientScript' => array(
 			'defaultScriptFilePosition' => CClientScript::POS_END,
 			'coreScriptPosition' => CClientScript::POS_END
+		),
+		'assetManager' => array(
+			'forceCopy' => YII_DEBUG
 		)
 
 	),

@@ -4,9 +4,9 @@
 /* @var $form CActiveForm  */
 ?>
 
-<h1>Вход в админ-раздел</h1>
-
 <div class="form form_login">
+	<h1>Вход в админ-раздел</h1>
+
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,

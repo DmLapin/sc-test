@@ -5,5 +5,9 @@
  */
 
 $this->beginContent('//layouts/base');
-	echo $content;
+?>
+<div class="page page_admin">
+	<?php echo $content; ?>
+</div>
+<?
 $this->endContent();

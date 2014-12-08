@@ -3,6 +3,9 @@
  * Базовый макет с необходимыми HTML-заголовками
  * @var $this CController
  */
+
+Yii::app()->clientScript->registerCssFile($this->assetsUrl.'/css/normalize.css');
+Yii::app()->clientScript->registerCssFile($this->assetsUrl.'/css/main.css');
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->

@@ -17,6 +17,7 @@ return array(
 
 		'assetManager'=>array(
 			'baseUrl'=>'/assets',
+			'forceCopy' => YII_DEBUG
 		),
 		'request' => array(
 			'baseUrl' => '/admin',
