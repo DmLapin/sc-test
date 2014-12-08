@@ -14,6 +14,7 @@ class Subscription extends CActiveRecord {
 		return array(
 			array('email', 'email', 'allowEmpty' => false, 'validateIDN' => true),
 			array('email', 'length', 'max'=>100),
+			array('email', 'unique', 'caseSensitive'=>false, 'message' => 'Вы уже подписаны на нашу рассылку'),
 			array('email', 'safe', 'on'=>'search'),
 		);
 	}

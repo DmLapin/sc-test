@@ -4,6 +4,10 @@ Yii::setPathOfAlias('common', dirname(__FILE__).DIRECTORY_SEPARATOR.'..');
 
 return array(
 
+	'import' => array(
+		'common.models.*'
+	),
+
 	'components'=>array(
 
 		'db'=>array(

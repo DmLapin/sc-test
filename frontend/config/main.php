@@ -6,6 +6,7 @@ return array(
 
 	'name' => 'Test work',
 	'basePath' => $appPath,
+	'language' => 'ru',
 
 	'import' => array(
 		'application.components.*'
@@ -17,6 +18,10 @@ return array(
 			'urlFormat' => 'path',
 			'showScriptName' => false
 		),
+		'clientScript' => array(
+			'defaultScriptFilePosition' => CClientScript::POS_END,
+			'coreScriptPosition' => CClientScript::POS_END
+		)
 
 	),
 
