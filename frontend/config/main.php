@@ -9,6 +9,15 @@ return array(
 
 	'import' => array(
 		'application.components.*'
-	)
+	),
+
+	'components'=>array(
+
+		'urlManager'=>array(
+			'urlFormat' => 'path',
+			'showScriptName' => false
+		),
+
+	),
 
 );

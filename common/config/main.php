@@ -1,12 +1,17 @@
 <?php
+
+Yii::setPathOfAlias('common', dirname(__FILE__).DIRECTORY_SEPARATOR.'..');
+
 return array(
 
 	'components'=>array(
 
-        'urlManager'=>array(
-            'urlFormat' => 'path',
-			'showScriptName' => false
-        ),
+		'db'=>array(
+			'class'=>'CDbConnection',
+			'connectionString'=>'mysql:host=localhost;dbname=sc-test',
+			'username'=>'sc-test',
+			'password'=>'sc-test'
+		),
 
     ),
 
