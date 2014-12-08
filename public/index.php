@@ -1,5 +1,5 @@
 <?php
-defined('YII_DEBUG') or define('YII_DEBUG',true);
+defined('YII_DEBUG') or define('YII_DEBUG', false);
 require_once(dirname(__FILE__).'/../common/framework/yii.php');
 if (preg_match('#^/admin/*#', $_SERVER['REQUEST_URI']))
 {
